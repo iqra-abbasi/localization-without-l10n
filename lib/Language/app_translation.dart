@@ -27,5 +27,6 @@ class AppTranslations {
   String get iqra => _translations[locale.languageCode]?['iqra'] ?? '';
   String get placeIqra => _translations[locale.languageCode]?['place'] ?? '';
   String get fatherName => _translations[locale.languageCode]?['father'] ?? '';
+  String get motherName => _translations[locale.languageCode]?['mother'] ?? '';
 
 }

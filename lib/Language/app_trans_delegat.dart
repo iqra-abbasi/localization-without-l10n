@@ -17,8 +17,8 @@ class AppTranslationsDelegate extends LocalizationsDelegate<AppTranslations> {
   //for first language selection country and language code
   Future<AppTranslations> load(Locale locale) async {
     final prefs = await SharedPreferences.getInstance();
-    final languageCode = prefs.getString('language_code') ?? 'zh';
-    final countryCode = prefs.getString('country_code') ?? 'CN';
+    final languageCode = prefs.getString('language_code') ?? 'en';
+    final countryCode = prefs.getString('country_code') ?? 'US';
     final savedLocale = Locale(languageCode, countryCode);
     return AppTranslations(savedLocale);
   }
